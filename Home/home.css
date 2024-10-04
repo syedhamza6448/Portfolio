@@ -60,7 +60,7 @@ section {
     margin: 20px 0px;
 }
 .section1 {
-    position: fixed;
+    position: relative;
     height: 400px;
     width: 700px;
     background-color: #ffe4c4;
@@ -90,8 +90,8 @@ section {
     /* animation: fadeUp 1s 4s alternate; */
 }
 .section2 {
-    position: fixed;
-    left: 730px;
+    position: relative;
+    left: 20px;
     height: 400px;
     width: 300px;
     background-image: url(assets/images/Me.jpg);
@@ -110,9 +110,9 @@ section {
     padding: 20px;
     background-color: #ffe4c4;
     height: 520px;
-    width: 440px;
-    position: fixed;
-    right: 10px;
+    width: 425px;
+    position: relative;
+    left: 35px;
     border-radius: 10px;
 }
 .header {
@@ -153,8 +153,9 @@ section {
     width: 465px;
     background-color: #ffe4c4;
     padding: 20px;
-    position: fixed;
-    bottom: 10px;
+    position: relative;
+    top: -180px;
+    left: 0px;
     border-radius: 10px;
 }
 .section4 img {
@@ -172,9 +173,9 @@ section {
     background-color: #4c4a45;
     color: #ffe4c4;
     padding: 20px;
-    position: fixed;
-    bottom: 10px;
-    left: 525px;
+    position: relative;
+    top: -180px;
+    left: 10px;
     border-radius: 10px;
 }
 .s5-header {
@@ -206,13 +207,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 440px;
+    width: 425px;
     height: 70px;
     padding: 0px 20px;
     background-color: #ffe4c4;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
+    position: relative;
+    bottom: 25px;
+    left: 25px;
     border-radius: 10px;
 }
 .socials {
