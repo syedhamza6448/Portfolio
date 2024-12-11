@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.hero {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.mycontainer {
+    font-family: "Oswald", sans-serif;
+    /* margin-top: px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: default;
+    background-image: url(/Assets/images/bg-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.title {
+    width: 80%;
+    margin-bottom: -90px;
+}
+.title h5{
+    color: #4481be;
+    font-size: 5vw;
+    animation: title 2s 1 ease-in;
+}
+.name {
+    width: 80%;
+    animation: name 1s 1 ease-in;
+}
+.name h1{
+    font-size: 27vw;
+    background: linear-gradient(to bottom, #2ebccc, #2ECC71 40%, #2ebccc);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-weight: bold;
+}
+.info {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #4481be;
+    margin-top: -70px;
+    animation: info 3s 1 ease-in;
+}
+.info p {
+    font-size: 2vw;
+    font-weight: 600;
+    padding: 0 50px;
+}
+@media (max-width: 1300px) {
+    .title {
+        margin-bottom: -50px;
+    }
+    .info {
+        margin-top: -40px;
+    }
+}
+@media (max-width: 600px) {
+    .hero {
+        height: 60vh;
+        width: 100vw;
+    }
+    .name h1{
+        font-size: 28vw;
+    }
+    .title {
+        margin-bottom: -20px;
+    }
+    .info {
+        margin-top: -20px;
+    }
+    .info p{
+        font-size: 14px;
+        padding: 0;
+    }
+}
+@keyframes name {
+    from {
+        transform: rotateX(-90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+@keyframes title {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+@keyframes info {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
