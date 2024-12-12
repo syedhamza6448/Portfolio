@@ -48,20 +48,43 @@
         <li class="menu__link"><a href="contact.html">Contact</a></li>
       </ul>
       <div class="menu-icon">
-        <i id="hamburger" class="fa-solid fa-bars" onclick="toggleMenu()" style="color: #34495E;"></i>
+        <i id="hamburger" class="fa-solid fa-bars" onclick="toggleMenu()" style="color: #2ECC71;"></i>
       </div>
     </nav>
   </header>
+
+  <!-- Hero Section -->
   <section class="hero">
     <div class="mycontainer">
-      <div class="title"><h5>PORTFOLIO</h5></div>
-      <div class="name"><h1>HAMZA</h1></div>
+      <div class="title"><h5 class="fadeLeft">PORTFOLIO</h5></div>
+      <div class="name"><h1 class="fadeRight">HAMZA</h1></div>
       <div class="info">
-        <p>Front-End Developer</p>
-        <p>2006</p>
+        <p class="fadeUp">Front-End Developer</p>
+        <p class="fadeDown">2006</p>
       </div>
     </div>
   </section>
+
+  <!-- Introduction -->
+   <section class="introduction">
+    <div data-aos="fade-right" data-aos-duration="3000" data-aos-offset="300" class="big-intro">
+      <h1>
+        Hello! I’m Syed Hamza, <i>Your Next <b>Web Developer</b></i>
+      </h1>
+    </div>
+    <div class="profile">
+      <div data-aos="fade-up-left"  data-aos-duration="3000" class="circle">
+        <img data-aos="fade-up" data-aos-offset="300" data-aos-duration="3000" src="Assets/images/Me.jpg" alt="">
+      </div>
+    </div>
+   </section>
+   <section class="about">
+
+   </section>
   <script src="Assets/js/navbar.js"></script>
+  <script src="Assets/js/home.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
