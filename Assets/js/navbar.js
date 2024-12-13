@@ -5,11 +5,11 @@ menuList.style.maxHeight = "0px";
 function toggleMenu() {
     if(menuList.style.maxHeight == "0px") {
         menuList.style.maxHeight = "350px";
-        hamburger.style.color = "#F5F6FA"
+        hamburger.style.color = "#CFBEAD"
     }
     else {
         menuList.style.maxHeight = "0px";
-        hamburger.style.color = "#34495E"
+        hamburger.style.color = "#4E342E"
     }
 }
  window.addEventListener("scroll", function() {

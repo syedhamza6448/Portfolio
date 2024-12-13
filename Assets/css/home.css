@@ -10,7 +10,6 @@
 }
 .hero .mycontainer {
     font-family: "Oswald", sans-serif;
-    /* margin-top: px; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -18,7 +17,7 @@
     align-items: center;
     text-align: center;
     cursor: default;
-    background-image: url(https://github.com/syedhamza6448/Portfolio/blob/main/Assets/images/bg-img.jpg?raw=true);
+    /* background-image: url(/Assets/images/bg-img.jpg); */
     background-position: center;
     background-size: cover;
 }
@@ -27,7 +26,7 @@
     margin-bottom: -90px;
 }
 .title h5{
-    color: #4481be;
+    color: #4E342E;
     font-size: 5vw;
     animation: title 2s 1 ease-in;
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -39,9 +38,10 @@
 }
 .name h1{
     font-size: 27vw;
-    background: linear-gradient(to bottom, #2ebccc, #2ECC71 40%, #2ebccc);
+    color: #A49083;
+    /* background: linear-gradient(-45deg, #4E342E 10%, #CFBEAD 80%, #4E342E);
     -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;  */
     font-weight: bold;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: #4481be;
+    color: #4E342E;
     margin-top: -70px;
     animation: info 3s 1 ease-in;
 }
@@ -67,8 +67,9 @@
     flex-direction: row;
     gap: 2em;
     height: 100vh;
+    background-color: #4E342E;
     position: sticky;
-    background-image: url(/Assets/images/intro-bg.avif);
+    /* background-image: url(/Assets/images/intro-bg.avif); */
     /* background: linear-gradient(45deg, green, lime, green, rgb(17, 131, 17)); */
     background-size: 300% 300%;
     background-size: contain;
@@ -83,33 +84,40 @@
 }
 .big-intro h1 {
     font-size: 8em;
-    color: #F5F6FA;
+    color: #A49083;
     z-index: 12;
     cursor: default;
 }
+.big-intro a{
+    text-decoration: none;
+    color: #A49083;
+}
 .big-intro h1 i {
     font-size: 7rem;
-    color: #2ECC71;
+    color: #CFBEAD;
 }
 .big-intro h1 i b {
     font-size: 8rem;
-    color: #2ECC71;
+    color: #FFD9AB;
     text-decoration: underline;
+}
+.big-intro h1 i b:hover{
+    animation: font-change 5s infinite ease-in-out;
 }
 .circle {
     position: absolute;
     height: 800px;
     width: 800px;
-    background-color: #2ECC71;
+    background-color: #A49083;
     margin-top: 130px;
-    /* margin-right: -1100px; */
     right: -100px;
     border-radius: 50%;
     z-index: 123;
     display: flex;
     justify-content: start;
     align-items: start;
-    border: 10px solid #F5F6FA;
+    border: 10px solid #FFD9AB;
+    animation: profile 5s infinite ease-in-out;
 }
 .circle img {
     border-radius: 50%;
@@ -121,6 +129,87 @@
     top: 30px;
     left: 30px;
 }
+/* About */
+.about {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+.about h1 {
+    text-align: center;
+    width: 100%;
+}
+.about h1 a {
+    text-align: center;
+    font-family: "Kameron";
+    font-size: 2em;
+    color: #4E342E;
+    font-weight: 700;
+}
+.aboutContainer {
+    display: flex;
+    flex-direction: row;
+}
+.about .myWork {
+    width: 70%;
+}
+.myWork .aboutMe {
+    height: 50%;
+}
+.myWork .aboutMe h1 {
+    text-align: left;
+    font-size: 5rem;
+    color: #4E342E;
+    font-family: "Oswald";
+} 
+.myWork .aboutMe p {
+    font-size: 1.5rem;
+    padding: 1em;
+    width: 80%;
+    border-radius: 10px;
+    font-family: "Kameron";
+    color: #FFD9AB;
+    background-color: #4E342E;
+}
+.p-languages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.p-languages h1 {
+    font-family: "Oswald";
+    color: #4E342E;
+    text-align: center;
+    width: 400px;
+    /* margin-top: 50px; */
+}
+.p-languages .mycontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.p-languages .mycontainer .sub-languages svg {
+    height: 80px;
+    width: 200px;
+    border-radius: 10px;
+}
+.p-languages .mycontainer .sub-languages p {
+    font-size: 1.25em;
+    text-align: center;
+    font-family: "Oswald";
+    color: #FFD9AB;
+}
+.sub-languages {
+    background-color: #4E342E;
+    border-radius: 10px;
+    padding: 10px 0px;
+}
+/* Projects */
 
 @media (max-width: 1300px) {
     /* Hero */
@@ -155,7 +244,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 10px solid #F5F6FA;
     }
     .circle img {
         border-radius: 50%;
@@ -165,6 +253,51 @@
         height: 95%;
         position: static;
     }
+    /* About */
+    .about {
+        overflow: hidden;
+        flex-direction: column;
+        width: 100vw;
+        cursor: default;
+        height: auto;
+    }
+    .about .aboutContainer .myWork .aboutMe {
+        align-items: center;
+        justify-content: center;
+        /* margin-left: 0; */
+    }
+    .about .aboutContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .about .myWork .aboutMe {
+        width: 95vw;
+    }
+    .about .myWork .aboutMe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .myWork .aboutMe p{
+        width: 100%;
+        text-align: center;
+    }
+    .about .myWork .aboutMe h1 {
+        text-align: center;
+    }
+    .p-languages .mycontainer {
+        flex-direction: row;
+    }
+    .sub-languages {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .p-languages .mycontainer .sub-languages svg {
+        width: 100px;
+    }
+    /* Projects */
     
 }
 @media (max-width: 600px) {
@@ -179,14 +312,10 @@
     .title {
         margin-bottom: -20px;
     }
-    .title h5 {
-        color: #F5F6FA;
-    }
     .info {
         margin-top: -20px;
     }
     .info p{
-        color: #F5F6FA;
         font-size: 14px;
         padding: 0;
     }
@@ -209,14 +338,26 @@
     }
     .big-intro h1 i b {
         font-size: 1.3em;
-    }
+    } 
     .circle {
         margin-top: -40px;
         position: static;
         height: 400px;
         width: 400px;
+        animation: none;
     }
+    /* About */
+    /* Wasn't Necessary */
+
+    /* Projects */
+    .projects {
+        width: 100vw;
+        height: 100vh;
+        background-color: #4E342E;
+    }
+
 }
+/* Hero */
 @keyframes name {
     from {
         transform: rotateX(-90deg);
@@ -241,6 +382,7 @@
         transform: rotateX(0deg);
     }
 }
+/* Introduction */
 @keyframes color-animation {
     0% {
         background-position: 0 50%;
@@ -252,3 +394,32 @@
         background-position: 0 50%;
     }
 }
+@keyframes font-change {
+    0% {
+        font-family: "Playfair Display", serif;
+    }
+    50% {
+        font-family: "Oswald", serif;
+    }
+    100% {
+        font-family: "Kameron", serif;
+    }
+}
+@keyframes profile {
+    0% {
+        transform: translateY(-40px);
+    }
+    50% {
+        transform: translateX(40px);
+    }
+    75% {
+        transform: translateX(40px);
+    }
+    100% {
+        transform: translateY(-40px);
+    }
+}
+/* About */
+/* Wasn't Necessary */
+
+/* Projects */

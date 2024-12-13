@@ -9,7 +9,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #2ECC71;
     position: fixed;
     font-family: "Kameron", serif;
     z-index: 123;
@@ -19,7 +18,7 @@ nav {
 }
 .logo h1 a {
     font-family: "Oswald", sans-serif;
-    color: #F5F6FA;
+    color: #4E342E;
     text-decoration: none;
     font-weight: 700;
 }
@@ -33,7 +32,7 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: #F5F6FA;
+    color: #FAEBD7;
     font-size: 20px;
 }
 #hamburger {
@@ -47,7 +46,7 @@ nav ul li a {
 }
 .menu__link a {
     top: 10px;
-    color: #F5F6FA;
+    color: #A49083;
     line-height: 2;
     /* font-size: 24px; */
     position: relative;
@@ -59,37 +58,37 @@ nav ul li a {
     width: 0;
     height: 2px;
     border-radius: 2px;
-    background-color: #F5F6FA;
+    background-color: #FAEBD7;
     position: absolute;
     bottom: -.25rem;
     left: 0;
     transition: all .4s;
 }
 header.sticky nav ul .menu__link a {
-    color: #F5F6FA;
+    color: #FAEBD7;
 }
 header.sticky nav ul .active a{
-    color: #34495E;
+    color: #ffd9ab;
 }
 header.sticky nav ul .active a::before {
-    background-color: #34495E;
+    background-color: #ffd9ab;
 }
 header.sticky nav ul .menu__link a:hover {
-    color: #34495E;
+    color: #FAEBD7;
 }
 header.sticky nav ul .menu__link a:hover::before {
-    background-color: #34495E;
+    background-color: #FAEBD7;
 }
 .menu__link a:hover::before {
     width: 100%;
-    background-color: #2ECC71;
+    background-color: #4E342E;
 }
 .menu__link a:hover {
-    color: #2ECC71;
+    color: #4E342E;
     font-weight: 600;
 }
 .active a{
-    color: #2ECC71;
+    color: #4E342E;
     font-weight: 600;
 }
 .active a::before {
@@ -97,7 +96,7 @@ header.sticky nav ul .menu__link a:hover::before {
     width: 100%;
     height: 2px;
     border-radius: 2px;
-    background-color: #2ECC71;
+    background-color: #4E342E;
     position: absolute;
     bottom: -.25rem;
     left: 0;
@@ -119,7 +118,7 @@ header.sticky nav {
     border-radius: 10px;
     transition: all 1s;
     height: 80px;
-    background-color: #2ecc70dc;
+    background-color: #A49083;
 }
 header.sticky nav .logo a {
         animation: color-gradient 10s infinite ease;
@@ -135,13 +134,16 @@ header.sticky nav ul li a {
     font-size: 20px;
 }
 @media (max-width: 600px) {
+    nav {
+        background-color: #A49083;
+    }
     nav ul {
         position: absolute;
         top: 70px;
         left: 0;
         right: 0;
         flex-direction: column;
-        background-color: #2ECC71;
+        background-color: #A49083;
         text-align: center;
         gap: 0;
         overflow: hidden;
@@ -163,13 +165,19 @@ header.sticky nav ul li a {
         width: 100vw;
     }
     .active a{
-        color: #34495E;
+        color: #4E342E;
     }
     .active a::before {
-        background-color: #34495E;
+        background-color: #4E342E;
     }
     header.sticky nav .menu-icon i {
-        color: #34495E;
+        color: #4E342E;
+    }
+    #menuList .menu__link a{
+        color: #FAEBD7;
+    }
+    #menuList .active a {
+        color: #4E342E;
     }
 }
 ::-webkit-scrollbar {
@@ -177,26 +185,27 @@ header.sticky nav ul li a {
     height: 0;
 }
 ::-webkit-scrollbar-track {
-    background-color: #f5f6fa7c;
+    background-color: #FFD9AB;
+    width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #34495E, #2ECC71);
+    background-color: #4E342E;
     border-radius: 1rem;
 }
 @keyframes color-gradient {
     0% {
-      color: #34495E;  
+      color: #4E342E;  
     }
     25% {
-        color: #F5F6FA;
+        color: #FFD9AB;
     }
     50% {
-      color: #34495E;  
+      color: #4E342E;  
     }
     75% {
-        color: #F5F6FA;
+        color: #FFD9AB;
     }
     100% {
-      color: #34495E;  
+      color: #4E342E;  
     }
 }
