@@ -81,7 +81,7 @@
   <section class="introduction">
     <div data-aos="fade-right" data-aos-duration="3000" data-aos-offset="300" class="big-intro">
       <h1>
-        <a href="contact.html"> Hello! I’m Syed Hamza, <i>Your Next <b>Web Developer</b></i></a>
+        <a href="contact.html"> Hello! I’m <b>Syed Hamza</b>, <i>Your Next <b>Web Developer</b></i></a>
       </h1>
     </div>
     <div class="profile">
@@ -104,7 +104,9 @@
         </div> <!-- "Who I Am?" -->
         <div class="aboutMe">
           <h1>"What I Do?"</h1>
-          <p>I design and develop modern, user-friendly websites that align with clients' goals and brand identity. With a growing knowledge of backend development, I focus on delivering clean, efficient code and creating intuitive interfaces, ensuring every project excels in functionality, aesthetic appeal, and performance.</p>
+          <p>I design and develop modern, user-friendly websites that align with clients' goals and brand identity. With
+            a growing knowledge of backend development, I focus on delivering clean, efficient code and creating
+            intuitive interfaces, ensuring every project excels in functionality, aesthetic appeal, and performance.</p>
         </div> <!-- "What I Do?" -->
       </div>
       <div class="p-languages">
@@ -144,7 +146,51 @@
   </section>
   <!-- Projects -->
   <section class="projects">
+    <h1><a href="projects.html">Projects</a></h1>
+    <div class="projectsContainer">
+      <script>
+        projects = [
+          {
+            img: "Assets/images/AskMe-ss.png",
+            name: "AskMe Mobile",
+            link: "https://syedhamza6448.github.io/Sem-End-Project/AskMe_Mobile/HTML/home.html"
+          },
+          {
+            img: "Assets/images/WeatherApp-ss.png",
+            name: "Weather App",
+            link: "https://syedhamza6448.github.io/Weather-App/"
+          },
+          {
+            img: "Assets/images/ToDoList-ss.png",
+            name: "To-Do List",
+            link: "https://syedhamza6448.github.io/To-Do-List/"
+          },
+          {
+            img: "Assets/images/rps-ss.png",
+            name: "Rock Paper Scissors",
+            link: "https://codepen.io/syedHamza6448/full/BaEMPez"
+          },
+          {
+            img: "Assets/images/ttt-ss.png",
+            name: "Tic Tac Toe",
+            link: "https://codepen.io/syedHamza6448/full/bGJzEKv"
+          },
+        ]
+        projects.forEach(function (projects) {
+          document.write
+          (`
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="3000" class="projectHolder">
+              <img class="project-ss" src="${projects.img}" alt="">
+              <h1>${projects.name}</h1>
+              <a href="${projects.link}"><p>${projects.link}</p></a>
+            </div>
+          `)
+        })  
+      </script>
+    </div>
+    <h2 data-aos="fade-down"><a class="menu__link" href="projects.html">Click Here to View More Projects</a></h2>
   </section>
+  <footer></footer>
   <script src="Assets/js/navbar.js"></script>
   <script src="Assets/js/home.js"></script>
   <script>

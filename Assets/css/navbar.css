@@ -118,7 +118,7 @@ header.sticky nav {
     border-radius: 10px;
     transition: all 1s;
     height: 80px;
-    background-color: #A49083;
+    background-color: #a49083a6;
 }
 header.sticky nav .logo a {
         animation: color-gradient 10s infinite ease;
@@ -136,6 +136,7 @@ header.sticky nav ul li a {
 @media (max-width: 600px) {
     nav {
         background-color: #A49083;
+        width: 100vw;
     }
     nav ul {
         position: absolute;
@@ -162,7 +163,7 @@ header.sticky nav ul li a {
         transition: all 0.5s;
     }
     header.sticky nav {
-        width: 100vw;
+        width: 90vw;
     }
     .active a{
         color: #4E342E;
