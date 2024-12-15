@@ -5,6 +5,13 @@
 
 /* Footer */
 footer {
+    background-color: #A49083;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footercontents {
     padding: 10px;
     background-color: #A49083;
     width: 100vw;
@@ -115,8 +122,20 @@ footer {
     transition-delay: 0.4s;
     color: #FFD9AB;
 }
+footer hr {
+    opacity: 1;
+    background-color: #4E342E;
+    height: 3px;
+    width: 95vw;
+}
+footer p {
+    font-family: "Kameron";
+    font-weight: 800;
+    color: #4E342E;
+    cursor: default;
+}
 @media (max-width: 900px) {
-    footer {
+    .footercontents {
         flex-wrap: wrap;
         flex: 1;
     }
