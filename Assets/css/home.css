@@ -101,7 +101,7 @@
 
 .big-intro a {
     text-decoration: none;
-    color: #A49083;
+    color: #CFBEAD;
     font-weight: 200;
 }
 .big-intro h1 a b {
@@ -117,10 +117,6 @@
     font-size: 8rem;
     color: #FFD9AB;
     text-decoration: underline;
-}
-
-.big-intro h1 i b:hover {
-    animation: font-change 5s infinite ease-in-out;
 }
 
 .circle {
@@ -361,7 +357,7 @@
     color: #FFD9AB;
     font-family: "Kameron";
 }
-.menu__link  {
+.projects .menu__link  {
     top: 10px;
     color: #FFD9AB;
     line-height: 2;
@@ -370,7 +366,7 @@
     transition: all .4s;
 }
 
-.menu__link::before {
+.projects .menu__link::before {
     content: '';
     width: 0;
     height: 2px;
@@ -381,11 +377,11 @@
     left: 0;
     transition: all .4s;
 }
-.menu__link:hover::before {
+.projects .menu__link:hover::before {
     width: 100%;
     background-color: #FFD9AB;
 }
-.menu__link:hover {
+.projects .menu__link:hover {
     color: #FFD9AB;
     font-weight: 600;
 }
@@ -587,6 +583,7 @@
     /* Wasn't Necessary */
 
     /* Projects */
+    /* Wasn't Necessary */
 
 }
 
@@ -636,20 +633,6 @@
     }
 }
 
-@keyframes font-change {
-    0% {
-        font-family: "Playfair Display", serif;
-    }
-
-    50% {
-        font-family: "Oswald", serif;
-    }
-
-    100% {
-        font-family: "Kameron", serif;
-    }
-}
-
 @keyframes profile {
     0% {
         transform: translateY(-40px);
@@ -672,3 +655,4 @@
 /* Wasn't Necessary */
 
 /* Projects */
+/* Wasn't Necessary */

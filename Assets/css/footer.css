@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    background-color: #A49083;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    flex: 4;
+}
+
+.footerCol {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.footerCol ul {
+    font-family: "Oswald";
+    font-size: 2em;
+    color: #4E342E;
+    margin-top: 20px;
+}
+
+.footerCol ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: .25em;
+}
+
+.footerCol ul li i {
+    /* margin-right: .5em; */
+    color: #FFD9AB;
+}
+
+.footerCol ul li a {
+    text-decoration: none;
+    color: #FFD9AB;
+    font-size: 1rem;
+    transition: color 0.5s ease-in-out;
+    font-family: "Kameron";
+}
+
+.footerCol ul li a:hover {
+    color: #4E342E;
+    text-decoration: underline;
+}
+
+.footerCol h6 {
+    font-family: "Oswald";
+    font-size: 2em;
+    font-weight: 400;
+    color: #4E342E;
+    margin-top: 20px;
+}
+.btn a{
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em 1em 0em;
+    color: #FFD9AB;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border-radius: 0;
+    font-family: "Kameron";
+    text-decoration: none;
+}
+
+.btn a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #FFD9AB;
+    transition: 0.5s ease;
+}
+
+.btn a:hover {
+    color: #4E342E;
+    transition-delay: 0.5s;
+    padding-left: 1.5em;
+}
+
+.btn a:hover::before {
+    width: 100%;
+}
+
+.btn a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #FFD9AB;
+    transition: 0.4s ease;
+    z-index: -1;
+}
+
+.btn a:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: #FFD9AB;
+}
+@media (max-width: 900px) {
+    footer {
+        flex-wrap: wrap;
+        flex: 1;
+    }
+    .resume {
+        margin-left: 1.5em;
+    }
+}
