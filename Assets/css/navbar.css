@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -123,7 +124,6 @@ header.sticky nav ul .menu__link a:hover::before {
 }
 
 nav {
-    height: 100px;
     width: 100vw;
     background-color: transparent;
 }
@@ -141,6 +141,8 @@ header.sticky nav {
     transition: all 1s;
     height: 80px;
     background-color: #a49083a6;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 header.sticky nav .logo a {

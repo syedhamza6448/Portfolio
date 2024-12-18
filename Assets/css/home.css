@@ -50,6 +50,7 @@
     -webkit-text-fill-color: transparent;  */
     font-weight: bold;
     transition: opacity 0.3s ease, transform 0.3s ease;
+    filter: drop-shadow(#4E342E 20px 20px 10px);
 }
 
 .info {
@@ -394,6 +395,9 @@
 
     .info {
         margin-top: -40px;
+    }
+    .name h1 {
+        filter: drop-shadow(10px 10px 5px);
     }
 
     /* Intro */

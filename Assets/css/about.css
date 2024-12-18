@@ -10,11 +10,42 @@ header {
 .heading {
     text-align: center;
     font-family: "Oswald";
-    font-size: 5em;
-    color: #4E342E;
-    text-decoration: underline;
-    margin-bottom: 1em;
+    font-size: 2.5em;
+    height: 10vh;
+    background-color: #4E342E;
+    color: #FFD9AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
 }
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #4E342E;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #FFD9AB;
+    overflow: hidden;
+}
+.hero-content {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.hero h1 {
+    width: fit-content;
+    font-family: "Oswald";
+    font-size: 40vh;
+    text-transform: uppercase;
+}
+
 
 /* About Me */
 
@@ -48,16 +79,43 @@ header {
     border-radius: 10px;
     text-align: center;
 }
+.more-text {
+    display: none;
+}
+
+.read-more-btn {
+    color: #A49083;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    text-decoration: underline;
+}
 .languages {
     display: flex;
     flex-direction: column;
 }
-.languages h1 {
+.about-heading {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-heading h1 {
+    width: 100vw;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "Oswald";
     text-align: center;
-    color: #4E342E;
-    font-size: 3em;
+    color: #FFD9AB;
+    font-size: 2.5rem;
     margin-bottom: 1.5em;
+    background-color: #4E342E;
 }
 
 .languagesList {
@@ -77,6 +135,8 @@ header {
     margin-bottom: 2em;
     background-color: transparent;
     border: 0;
+    cursor: pointer;
+    font-family: "Kameron";
 }
 
 .card strong {
@@ -144,20 +204,13 @@ header {
     height: 150px;
     width: 150px;
 }
-
+.back-content strong::before {
+    content: "Hover To Get More Details";
+}
 .card:hover .content {
     transform: rotateY(180deg);
 }
 
-@keyframes rotation_481 {
-    0% {
-        transform: rotateZ(0deg);
-    }
-
-    0% {
-        transform: rotateZ(360deg);
-    }
-}
 
 .front {
     transform: rotateY(180deg);
@@ -237,7 +290,6 @@ header {
     object-fit: cover;
     object-position: center;
 }
-
 .circle {
     width: 90px;
     height: 90px;
@@ -265,6 +317,135 @@ header {
     height: 30px;
     animation-delay: -1800ms;
 }
+/* Career */
+.career {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.career .heading {
+    background-color: #4E342E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.career .heading h1 {
+    text-align: center;
+    font-family: "Oswald";
+    font-size: 2.5rem;
+    color: #FFD9AB;
+}
+.journey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.journey p {
+    font-family: "Kameron";
+    text-align: center;
+    font-size: 24px;
+    background-color: #4E342E;
+    color: #FFD9AB;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 50px;
+}
+/* Services */
+.services {
+    width: 100vw;
+    margin-top: 100px;
+}
+.services .mycontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.sub-service {
+    width: 80vw;
+    gap: 5px;
+    color: #FFD9AB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub-service .main {
+    width: 100%;
+    font-family: "Oswald";
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #4E342E;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+.sub-service .main:hover {
+    background-color: #A49083;
+}
+.sub-service .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: #4E342E;
+    padding: 20px;
+    font-family: "Kameron";
+    font-size: 22px;
+    border-radius: 10px;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    display: none;
+} 
+.sub-service .description.active {
+    display: block;
+}
+/* Learning */
+.learning {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.learning h2 {
+    width: 100%;
+}
+.sub-learning {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 10px;
+}
+.sub-learning h2{
+    color: #4E342E;
+    font-size: 50px;
+    font-family: "Oswald";
+    text-decoration: underline;
+    text-align: center;
+}
+.sub-learning p {
+    background-color: #4E342E;
+    color: #FFD9AB;
+    padding: 10px;
+    text-align: center;
+    font-family: "Kameron";
+    border-radius: 10px;
+    font-size: 24px;
+}
+
 
 
 @media (max-width: 1200px) {
@@ -273,6 +454,15 @@ header {
     }
     .card {
         width: 45%;
+    }
+    .back-content strong::before {
+        content: "Tap To Get More Details";
+    }
+    .hero-content {
+        flex-direction: column;
+    }
+    .hero-content h1 {
+        font-size: 25vh;
     }
 }
 
@@ -291,18 +481,33 @@ header {
     .card {
         width: 95%;
     }
+    .hero-content h1 {
+        font-size: 15vh;
+    }
+    .sub-service .main h2{
+        font-size: 1.25em;
+    }
 }
 
 @keyframes floating {
     0% {
         transform: translateY(0px);
     }
-
+    
     50% {
         transform: translateY(10px);
     }
 
     100% {
         transform: translateY(0px);
+    }
+}
+@keyframes rotation_481 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    
+    0% {
+        transform: rotateZ(360deg);
     }
 }
