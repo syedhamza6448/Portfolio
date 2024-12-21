@@ -397,27 +397,27 @@
         margin-top: -40px;
     }
     .name h1 {
-        filter: drop-shadow(10px 10px 5px);
+        filter: drop-shadow(#4E342E 10px 10px 5px);
     }
-
+    
     /* Intro */
     .introduction {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
+    
     .big-intro h1 {
         font-size: 5.5em;
     }
-
+    
     .big-intro {
         width: 90%;
         margin-top: 5em;
         margin-left: 2em;
         margin-right: 2em;
     }
-
+    
     .circle {
         position: static;
         height: 800px;
@@ -429,7 +429,7 @@
         justify-content: center;
         align-items: center;
     }
-
+    
     .circle img {
         border-radius: 50%;
         background-position: left;
@@ -438,7 +438,7 @@
         height: 95%;
         position: static;
     }
-
+    
     /* About */
     .about {
         overflow: hidden;
@@ -447,13 +447,13 @@
         cursor: default;
         height: auto;
     }
-
+    
     .about .aboutContainer .myWork .aboutMe {
         align-items: center;
         justify-content: center;
         /* margin-left: 0; */
     }
-
+    
     .about .aboutContainer {
         display: flex;
         flex-direction: column;
@@ -463,43 +463,43 @@
     .about .myWork {
         margin-left: 0;
     }
-
+    
     .about .myWork .aboutMe {
         width: 95vw;
         margin-left: 2vw;
     }
-
+    
     .about .myWork .aboutMe {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
+    
     .about .myWork .aboutMe p {
         width: 100%;
         text-align: center;
         display: flex;
     }
-
+    
     .about .myWork .aboutMe h1 {
         text-align: center;
     }
-
+    
     .p-languages .mycontainer {
         flex-direction: row;
     }
-
+    
     .sub-languages {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
+    
     .p-languages .mycontainer .sub-languages svg {
         width: 85px;
     }
-
+    
     /* Projects */
     .projectsContainer {
         flex-direction: column;
@@ -508,7 +508,7 @@
         align-items: center;
         flex: 1;
     }
-
+    
     .projectHolder {
         display: flex;
         flex-direction: column;
@@ -521,21 +521,22 @@
         background-color: #FFD9AB;
         margin-bottom: 2em;
     }
-
+    
 }
 
 @media (max-width: 600px) {
-
+    
     /* Hero */
     .hero {
         height: 100vh;
         width: 100vw;
     }
-
+    
     .name h1 {
         font-size: 28vw;
+        filter: drop-shadow(#4E342E 4px 4px 5px);
     }
-
+    
     .title {
         margin-bottom: -20px;
     }

@@ -445,6 +445,16 @@ header {
     border-radius: 10px;
     font-size: 24px;
 }
+/* Philosophy */
+.philosophy .mycontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 4;
+}
+
 
 
 
@@ -467,6 +477,9 @@ header {
 }
 
 @media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
     .mycontainer .mywork h2 {
         font-size: 3em;
     }

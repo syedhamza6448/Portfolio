@@ -108,6 +108,7 @@
             </div>
         </nav>
     </header>
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1 data-aos="fade-right" data-aos-duration="3000" class="fadeLeft">About</h1>
@@ -430,16 +431,81 @@
     </section>
     <!-- Learning -->
      <section id="learning" class="learning">
-        <h2 class="heading">Learning Journey</h2>
-        <div class="sub-learning">
+        <h2 data-aos="fade-down" data-aos-offset="300" data-aos-duration="3000" class="heading">Learning Journey</h2>
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="3000" class="sub-learning">
             <h2>Current Backend Development Learning</h2>
             <p>I am currently expanding my skill set by diving into backend development technologies. My focus includes XML, JSON, PHP, and the Laravel framework, alongside strengthening my expertise in MySQL for database management. Additionally, I’m exploring Advanced JavaScript concepts to build more dynamic and interactive web applications. By integrating these tools and languages into my development journey, I aim to evolve into a full-stack developer capable of delivering robust, end-to-end solutions.</p>
         </div>
-        <div class="sub-learning">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="3000" class="sub-learning">
             <h2>Enthusiasm for Continuous Learning</h2>
             <p>Driven by an insatiable curiosity and passion for technology, I am committed to continuous learning and growth. I enjoy exploring new programming languages, tools, and frameworks to stay updated with evolving industry trends. This mindset allows me to embrace challenges, adapt to innovations, and consistently refine my skills to deliver cutting-edge solutions that meet modern development standards.</p>
         </div>
      </section>
+     <!-- Work Philosophy -->
+      <section class="philosophy">
+        <h2 data-aos="fade-down" data-aos-offset="300" data-aos-duration="3000" class="heading">Work Philosophy</h2>
+        <div class="mycontainer">
+            <script>
+                    traitCard = [
+                        {
+                            icon: `<h1 style="color: #FFD9AB;text-align: center;">Attention to Detail</h1>`,
+                            level: "Ensuring every project is polished, functional, and aligns with client expectations."
+                        },
+                        {
+                            icon: `<h1 style="color: #FFD9AB;text-align: center;">Passion for Clean Code</h1>`,
+                            level: "Writing code that is efficient, maintainable, and adheres to best practices."
+                        },
+                        {
+                            icon: `<h1 style="color: #FFD9AB;text-align: center;">User-Centric Design</h1>`,
+                            level: "Focusing on creating interfaces that enhance user experience and engagement."
+                        },
+                        {
+                            icon: `<h1 style="color: #FFD9AB;text-align: center;">Commitment to Continuous Learning</h1>`,
+                            level: "Staying updated with the latest technologies and trends to deliver innovative and impactful solutions."
+                        },
+                        {
+                            icon: `<h1 style="color: #FFD9AB;text-align: center;">Collaboration and Communication</h1>`,
+                            level: "Staying updated with the latest technologies and trends to deliver innovative and impactful solutions."
+                        },
+                    ]
+                    traitCard.forEach(function (traitCard) {
+                        document.write
+                            (`
+                            <div data-aos="fade-down" data-aos-offset="300" data-aos-duration="3000" class="card">
+                                <div class="content">
+                                    <div class="back">
+                                        <div class="back-content">
+                                            ${traitCard.icon}
+                                            <strong></strong>
+                                        </div>
+                                    </div>
+                                    <div class="front">
+                                        <div class="img">
+                                            <div class="circle"></div>
+                                            <div class="circle" id="right"></div>
+                                        <div class="circle" id="bottom"></div>
+                                    </div>
+                                    <div class="front-content">
+                                        <div style="display: flex; justify-content: center; align-items: center; height: 100%;" class="titleContainer">
+                                            <p class="level">${traitCard.level}</p>
+                                        </div>
+                                        <div class="progressBars">
+                                            <div style="display: none" class="skill">
+                                                <p> <span></span></p>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width:; background-color: #FFD9AB;"></div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            `)
+                    })  
+                </script>
+        </div>
+      </section>
     <!-- Footer -->
     <footer id="footer">
         <div class="footercontents">
@@ -462,14 +528,14 @@
             <div class="footerCol">
                 <ul data-aos="fade-down" data-aos-duration="3000">Social Links
                     <li style="margin-top: 15px;"><i class="fa-brands fa-instagram fa-2xs"></i><a
-                            href="https://www.instagram.com/s.yedhamza/">@s.yedhamza</a></li>
+                            href="https://www.instagram.com/s.yedhamza/" target="_blank" >@s.yedhamza</a></li>
                     <li><i class="fa-brands fa-github fa-2xs"></i><a
-                            href="https://github.com/syedhamza6448">syedhamza6448</a>
+                            href="https://github.com/syedhamza6448" target="_blank" >syedhamza6448</a>
                     </li>
                     <li><i class="fa-brands fa-facebook fa-2xs"></i><a
-                            href="https://www.facebook.com/profile.php?id=61563786374671">Syed Hamza</a></li>
+                            href="https://www.facebook.com/profile.php?id=61563786374671" target="_blank" >Syed Hamza</a></li>
                     <li><i class="fa-brands fa-codepen fa-2xs"></i><a
-                            href="https://codepen.io/syedHamza6448">syedHamza6448</a>
+                            href="https://codepen.io/syedHamza6448" target="_blank" >syedHamza6448</a>
                     </li>
                 </ul>
             </div>
