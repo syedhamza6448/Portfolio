@@ -213,6 +213,9 @@
     .card {
         width: 90%;
     }
+    .overview p {
+        font-size: 15px;
+    }
 }
 @media (max-width: 600px) {
     .hero h1 {
@@ -227,4 +230,5 @@
     .card-front a {
         font-size: small;
     }
+    
 }
