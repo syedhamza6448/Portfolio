@@ -139,9 +139,9 @@
 .circle img {
     border-radius: 50%;
     background-position: left;
-    background-size: contain;
-    width: 80%;
-    height: 80%;
+    background-size: cover;
+    width: 90%;
+    height: 90%;
     position: absolute;
     top: 30px;
     left: 30px;
